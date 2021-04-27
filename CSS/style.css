@@ -1,6 +1,7 @@
 h1 {
     font-size: larger;
     text-align: center;
+    color: crimson;
 }
 
 nav ul li {
@@ -11,3 +12,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
 }
+
+
+
+
