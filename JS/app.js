@@ -1,137 +1,168 @@
 'use strict';
-let userName= prompt('welcome to my webpage, please enter your name');
+let userName = prompt('welcome to my webpage, please enter your name');
 
 alert('welcome ' + userName);
 
-let score=0
+let score = 0
 
-let age= prompt('do I have 24 years old?');
-console.log(age.toUpperCase())
-switch(age.toUpperCase()){
-    case 'YES':
+
+let question1 = function (age) {
+    switch (age.toUpperCase()) {
+        case 'YES':
         case 'Y':
-        //console.log('wrong answer, i\'m 22');
-    alert('wrong answer, i\'m 22');
-    break;
-    case 'NO':
+            //console.log('wrong answer, i\'m 22');
+            alert('wrong answer, i\'m 22');
+            break;
+        case 'NO':
         case 'N':
-        //console.log('good job, i\"m 22');
-    alert('good job, i\"m 22');
-    score++;
-    break; 
+            //console.log('good job, i\"m 22');
+            alert('good job, i\"m 22');
+            score++;
+            break;
 
 
+    }
 }
+let age = prompt('do I have 24 years old?');
+console.log(age.toUpperCase())
+question1(age);
 
-let favTeam= prompt('am I a big fan of manchester united?');
 
-switch(favTeam.toUpperCase()){
-    case 'YES':
+let question2 = function (favTeam) {
+    switch (favTeam.toUpperCase()) {
+        case 'YES':
         case 'Y':
             //console.log ('you are right, GGMU');
-        alert('you are right, GGMU');
-        score++;
-        break;
-    case 'NO':
+            alert('you are right, GGMU');
+            score++;
+            break;
+        case 'NO':
         case 'N':
             //console.log('wrong answer');
-        alert('wrong answer');
-        break;
-    
+            alert('wrong answer');
+            break;
+
+    }
 }
+let favTeam = prompt('am I a big fan of manchester united?');
+question2(favTeam);
 
-let adress= prompt('do I live in Amman?');
 
-switch(adress.toUpperCase()){
-    case 'YES':
+let question3 = function (address) {
+    switch (address.toUpperCase()) {
+        case 'YES':
         case 'Y':
-           // console.log('wrong answer, I live an Rusayfah');
-        alert('wrong answer, I live an Rusayfah');
-        break;
-     case 'NO':
+            // console.log('wrong answer, I live an Rusayfah');
+            alert('wrong answer, I live an Rusayfah');
+            break;
+        case 'NO':
         case 'N':
-        // console.log('well done, I live in Rusayfah');
-         alert('well done, I live in Rusayfah');
-         score++;
-         break;
+            // console.log('well done, I live in Rusayfah');
+            alert('well done, I live in Rusayfah');
+            score++;
+            break;
 
+    }
 }
+let address = prompt('do I live in Amman?');
+question3(address);
 
-let major= prompt('did I study spansh and english?');
 
-switch(major.toUpperCase()){
-    case 'YES':
+let question4 = function (major) {
+    switch (major.toUpperCase()) {
+        case 'YES':
         case 'Y':
-           //console.log('good job');
-        alert('good job');
-        score++;
-        break;
-     case 'NO':
+            //console.log('good job');
+            alert('good job');
+            score++;
+            break;
+        case 'NO':
         case 'N':
             //console.log('wrong answer');
-         alert('wrong answer');
-          break;
+            alert('wrong answer');
+            break;
+    }
 }
+let major = prompt('did I study spansh and english?');
+question4(major);
 
 
-let hoppy= prompt('do I cook in my free time?');
 
-switch(hoppy.toUpperCase()){
-    case 'YES':
+let question5 = function (hobby) {
+    switch (hobby.toUpperCase()) {
+        case 'YES':
         case 'Y':
             console.log('off course not');
-        alert('off course not');
-        break;
-     case 'NO':
+            alert('off course not');
+            break;
+        case 'NO':
         case 'N':
             //console.log('you are stunning' + userName);
-         alert('you are stunning ' + userName);
-         score++;
-         break;
+            alert('you are stunning ' + userName);
+            score++;
+            break;
 
-        
+
+    }
 }
- 
-let broSis=Number (prompt('how many brothers and sisters do I have?'));
-for (let i =0; i<4; i++){
-    if(broSis>3){
+let hobby = prompt('do I cook in my free time?');
+question5(hobby);
 
-    broSis=prompt("thats too high");
-    }
-     if (broSis<3){
+let question6 = function (broSis) {
+    for (let i = 0; i < 4; i++) {
+        if (broSis > 3) {
 
-    broSis=prompt('thats too low');
-    }
-    else if (broSis==3){
-    alert('you nailed it!');
-    score++;
-    break;
-    }
-    
-    }
+            broSis = prompt("thats too high");
+        }
+        if (broSis < 3) {
 
-    let question7= prompt('I like so many colors, guess one of them');
-    let color= ['red', 'blue', 'black', 'green'];
-    for (let i =0; i<6; i++){
-        if (question7== color[0]||question7==color[1] || question7==color[2] || question7==color[3]){
-        alert('correct!');
-        score++;
-        break;
+            broSis = prompt('thats too low');
+        }
+        else if (broSis == 3) {
+            alert('you nailed it!');
+            score++;
+            break;
         }
 
-        else { 
-            question7=prompt('try again');
-         }
-        
-        
+    } alert('i do have 3 brothers and sisters');
+}
+
+let broSis = Number(prompt('how many brothers and sisters do I have?'));
+question6(broSis);
+
+
+let question7a = function (color) {
+
+    for (let i = 0; i < 6; i++) {
+        let question7 = prompt('I like so many colors, guess one of them');
+        let guess = question7.toLowerCase();
+        for (var j = 0; j < color.length; j++) {
+            if (guess === color[j]) {
+
+
+                alert('correct!');
+                score++;
+                i = 6;
+                break;
+            }
         }
-    
+        if (i !== 6) {
+            alert('Sorry wrong answer' + question7 + ', try again');
+            console.log('Sorry wrong answer, try again');
+        }
 
-    
-      alert('may fav colors are; red, blue, black, and green');
-      alert('your final score is '+score+ ' out of 7');
 
-    
+    }
+}
+let color = ['red', 'blue', 'black', 'green'];
+
+question7a(color);
+
+
+alert('may fav colors are; red, blue, black, and green');
+alert('your final score is ' + score + ' out of 7');
+
+
 alert('I hope you enjoyed ' + userName);
 
 
