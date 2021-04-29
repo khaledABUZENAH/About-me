@@ -10,12 +10,10 @@ let question1 = function (age) {
     switch (age.toUpperCase()) {
         case 'YES':
         case 'Y':
-            //console.log('wrong answer, i\'m 22');
             alert('wrong answer, i\'m 22');
             break;
         case 'NO':
         case 'N':
-            //console.log('good job, i\"m 22');
             alert('good job, i\"m 22');
             score++;
             break;
@@ -32,13 +30,11 @@ let question2 = function (favTeam) {
     switch (favTeam.toUpperCase()) {
         case 'YES':
         case 'Y':
-            //console.log ('you are right, GGMU');
             alert('you are right, GGMU');
             score++;
             break;
         case 'NO':
         case 'N':
-            //console.log('wrong answer');
             alert('wrong answer');
             break;
 
@@ -52,12 +48,10 @@ let question3 = function (address) {
     switch (address.toUpperCase()) {
         case 'YES':
         case 'Y':
-            // console.log('wrong answer, I live an Rusayfah');
             alert('wrong answer, I live an Rusayfah');
             break;
         case 'NO':
         case 'N':
-            // console.log('well done, I live in Rusayfah');
             alert('well done, I live in Rusayfah');
             score++;
             break;
@@ -72,13 +66,11 @@ let question4 = function (major) {
     switch (major.toUpperCase()) {
         case 'YES':
         case 'Y':
-            //console.log('good job');
             alert('good job');
             score++;
             break;
         case 'NO':
         case 'N':
-            //console.log('wrong answer');
             alert('wrong answer');
             break;
     }
@@ -97,7 +89,6 @@ let question5 = function (hobby) {
             break;
         case 'NO':
         case 'N':
-            //console.log('you are stunning' + userName);
             alert('you are stunning ' + userName);
             score++;
             break;

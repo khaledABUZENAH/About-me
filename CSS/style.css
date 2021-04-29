@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Raleway:ital,wght@1,300&display=swap');
 h1 {
-    font-size: larger;
+    font-size: 2cm;
     text-align: center;
-    color: crimson;
+    color: rgba(221, 154, 66, 0.986);
+    font-family: 'Orelega One', cursive;
+
 }
 
 nav ul li {
@@ -15,4 +20,56 @@ nav ul li a {
 
 
 
+p { 
+ border: solid black 1px ;
+ text-align:center;
+ background-color: rgba(221, 154, 66, 0.986);
+ font-family: 'Raleway', sans-serif;
+ font-weight: bold;
+ 
+ 
+ 
 
+}
+p img {
+
+    float: right;
+    height: 250px;
+    width: 300px;
+}
+#links1 {
+
+    border: dotted rgb(0, 0, 0);
+    background-color: rgb(221, 193, 168);
+    
+
+    
+}
+
+nav ul li a {
+    color: rgba(0, 0, 0, 0.986);
+}
+
+body{
+    background-color: wheat;
+}
+
+
+footer {
+
+    text-align: center;
+    font-family: 'Freckle Face', cursive;
+}
+
+
+ol li{
+
+border: solid orangered 3px;
+
+
+}
+
+h2 {
+
+    font-family: 'Orelega One', cursive;
+}
